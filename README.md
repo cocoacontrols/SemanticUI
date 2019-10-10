@@ -20,11 +20,11 @@ Some colors that are used by system elements and applications. These return name
 
 # Adaptable Grays
 
-Shades of gray. systemGray is the base gray color. The numbered variations, systemGray2 through systemGray6, are grays which increasingly trend away from systemGray and in the direction of systemBackgroundColor.
+Shades of gray. `systemGray` is the base gray color. The numbered variations, `systemGray2` through `systemGray6`, are grays which increasingly trend away from `systemGray` and in the direction of `systemBackgroundColor`.
 
-In UIUserInterfaceStyleLight: systemGray1 is slightly lighter than systemGray. systemGray2 is lighter than that, and so on.
+In `UIUserInterfaceStyleLight`: `systemGray1` is slightly lighter than `systemGray`. `systemGray2` is lighter than that, and so on.
 
-In UIUserInterfaceStyleDark:  systemGray1 is slightly darker than systemGray. systemGray2 is darker than that, and so on.
+In `UIUserInterfaceStyleDark`:  `systemGray1` is slightly darker than `systemGray`. `systemGray2` is darker than that, and so on.
 
 * `.systemGray`
 * `.systemGray2`
