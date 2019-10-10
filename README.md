@@ -2,7 +2,13 @@
 
 This sample project makes it easy to visualize all of iOS 13's semantic and adaptable colors. These are colors that automatically adapt to system settings, like Dark Mode, to give your app a UI that is always legible.
 
+## Light Mode
+
 <img src="Screenshots/screenshot.png" alt="Screenshot of the example project" width="320">
+
+## Dark Mode
+
+<img src="Screenshots/screenshot-dark.png" alt="Screenshot of the example project in Dark Mode" width="320">
 
 # Adaptable Colors
 
