@@ -1,6 +1,6 @@
-# iOS 13 Dark Mode and Semantic Colors
+# iOS 13 Semantic UI: Dark Mode and Fonts
 
-This sample project makes it easy to visualize all of iOS 13's semantic and adaptable colors. These are colors that automatically adapt to system settings, like Dark Mode, to give your app a UI that is always legible.
+This sample project makes it easy to visualize all of iOS 13's semantic and adaptable colors, and preferred fonts for text styles. Semantic colors automatically adapt to system settings, like Dark Mode, to give your app a UI that is always legible. Semantic fonts are used in Dyanmic Type to make sure that your font sizes always scale with to meet the user's needs.
 
 ## Light Mode
 
@@ -10,7 +10,13 @@ This sample project makes it easy to visualize all of iOS 13's semantic and adap
 
 <img src="Screenshots/screenshot-dark.png" alt="Screenshot of the example project in Dark Mode" width="320">
 
-# Adaptable Colors
+## Fonts
+
+<img src="Screenshots/fonts.png" alt="Screenshot of the example project's fonts viewer" width="320">
+
+# Colors
+
+## Adaptable Colors
 
 Some colors that are used by system elements and applications. These return named colors whose values may vary between different contexts and releases. Do not make assumptions about the color spaces or actual colors used.
 
@@ -24,7 +30,7 @@ Some colors that are used by system elements and applications. These return name
 * `.systemTeal`
 * `.systemYellow`
 
-# Adaptable Grays
+## Adaptable Grays
 
 Shades of gray. `systemGray` is the base gray color. The numbered variations, `systemGray2` through `systemGray6`, are grays which increasingly trend away from `systemGray` and in the direction of `systemBackgroundColor`.
 
@@ -39,7 +45,7 @@ In `UIUserInterfaceStyleDark`:  `systemGray1` is slightly darker than `systemGra
 * `.systemGray5`
 * `.systemGray6`
 
-# Label Colors
+## Label Colors
 
 Foreground colors for static text and related elements.
 
@@ -48,26 +54,26 @@ Foreground colors for static text and related elements.
 * `.tertiaryLabel`
 * `.quaternaryLabel`
 
-# Text Colors
+## Text Colors
 
 Foreground color for placeholder text in controls or text fields or text views.
 
 * `.placeholderText`
 
-# Link Color
+## Link Color
 
 Foreground color for standard system links.
 
 * `.link`
 
-# Separators
+## Separators
 
 Foreground colors for separators (thin border or divider lines). `separatorColor` may be partially transparent, so it can go on top of any content. `opaqueSeparatorColor` is intended to look similar, but is guaranteed to be opaque, so it will completely cover anything behind it. Depending on the situation, you may need one or the other.
 
 * `.separator`
 * `.opaqueSeparator`
 
-# Fill Colors
+## Fill Colors
 
 Fill colors for UI elements. These are meant to be used over the background colors, since their alpha component is less than 1.
 
@@ -84,7 +90,7 @@ Fill colors for UI elements. These are meant to be used over the background colo
 * `.tertiarySystemFill`
 * `.quaternarySystemFill`
 
-# Background Colors
+## Background Colors
 
 We provide two design systems (also known as "stacks") for structuring an iOS app's backgrounds. Each stack has three "levels" of background colors. The first color is intended to be the main background, farthest back. Secondary and tertiary colors are layered on top of the main background, when appropriate.
 
@@ -96,7 +102,7 @@ Stack 1: `systemBackground` -  Use this stack for views with standard table view
 * `.secondarySystemBackground`
 * `.tertiarySystemBackground`
 
-# Grouped Background Colors
+## Grouped Background Colors
 
 Stack 2: `systemGroupedBackground` - Use this stack for views with grouped content, such as grouped tables and platter-based designs. These are like grouped table views, but you may use these colors in places where a table view wouldn't make sense.
 
@@ -104,12 +110,28 @@ Stack 2: `systemGroupedBackground` - Use this stack for views with grouped conte
 * `.secondarySystemGroupedBackground`
 * `.tertiarySystemGroupedBackground`
 
-# Non-Adaptable Colors
+## Non-Adaptable Colors
 
 `lightTextColor` is always light, and `darkTextColor` is always dark, regardless of the current `UIUserInterfaceStyle`. When possible, we recommend using `labelColor` and its variants, instead.
 
 * `.lightText`
 * `.darkText`
+
+# Fonts
+
+Font text styles, semantic descriptions of the intended use for a font returned by `UIFont.preferredFont(forTextStyle:)`.
+
+* `.largeTitle`
+* `.title1`
+* `.title2`
+* `.title3`
+* `.headline`
+* `.subheadline`
+* `.body` 
+* `.callout`
+* `.footnote`
+* `.caption1`
+* `.caption2`
 
 # License
 
