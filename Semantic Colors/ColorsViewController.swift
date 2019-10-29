@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ColorsViewController.swift
 //  Semantic Colors
 //
 //  Created by Aaron Brethorst on 9/23/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     // MARK: - Sections
 

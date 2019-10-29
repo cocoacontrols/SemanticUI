@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let tabController = UITabBarController()
         tabController.viewControllers = [
-            UINavigationController(rootViewController: ViewController())
+            UINavigationController(rootViewController: ColorsViewController())
         ]
 
         window.rootViewController = tabController
