@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9368BC49237611F4002A14FE /* SFSymbol in Frameworks */ = {isa = PBXBuildFile; productRef = 9368BC48237611F4002A14FE /* SFSymbol */; };
+		9368BC4B23761210002A14FE /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368BC4A23761210002A14FE /* IconsViewController.swift */; };
 		9368F026233966C70041AF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368F025233966C70041AF64 /* AppDelegate.swift */; };
 		9368F02F233966CB0041AF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9368F02E233966CB0041AF64 /* Assets.xcassets */; };
 		9368F032233966CB0041AF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9368F030233966CB0041AF64 /* LaunchScreen.storyboard */; };
@@ -15,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9368BC4A23761210002A14FE /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
 		9368F022233966C70041AF64 /* Semantic Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Semantic Colors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9368F025233966C70041AF64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9368F02E233966CB0041AF64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9368BC49237611F4002A14FE /* SFSymbol in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 		9368F024233966C70041AF64 /* Semantic Colors */ = {
 			isa = PBXGroup;
 			children = (
+				9368BC4A23761210002A14FE /* IconsViewController.swift */,
 				93A34B3D2368B65F00FE397D /* FontsViewController.swift */,
 				93A34B3B2368B63500FE397D /* ColorsViewController.swift */,
 				9368F025233966C70041AF64 /* AppDelegate.swift */,
@@ -80,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Semantic Colors";
+			packageProductDependencies = (
+				9368BC48237611F4002A14FE /* SFSymbol */,
+			);
 			productName = "Semantic Colors";
 			productReference = 9368F022233966C70041AF64 /* Semantic Colors.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 9368F019233966C70041AF64;
+			packageReferences = (
+				9368BC47237611F4002A14FE /* XCRemoteSwiftPackageReference "SFSymbol" */,
+			);
 			productRefGroup = 9368F023233966C70041AF64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 				93A34B3C2368B63500FE397D /* ColorsViewController.swift in Sources */,
 				93A34B3E2368B65F00FE397D /* FontsViewController.swift in Sources */,
 				9368F026233966C70041AF64 /* AppDelegate.swift in Sources */,
+				9368BC4B23761210002A14FE /* IconsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9368BC47237611F4002A14FE /* XCRemoteSwiftPackageReference "SFSymbol" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Nirma/SFSymbol";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9368BC48237611F4002A14FE /* SFSymbol */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9368BC47237611F4002A14FE /* XCRemoteSwiftPackageReference "SFSymbol" */;
+			productName = SFSymbol;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9368F01A233966C70041AF64 /* Project object */;
 }
