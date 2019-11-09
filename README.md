@@ -14,6 +14,10 @@ This sample project makes it easy to visualize all of iOS 13's semantic and adap
 
 <img src="Screenshots/fonts.png" alt="Screenshot of the example project's fonts viewer" width="320">
 
+## SF Symbols
+
+<img src="Screenshots/icons.png" alt="Screenshot of the example project's SF Symbols viewer" width="320">
+
 # Colors
 
 ## Adaptable Colors
@@ -133,7 +137,7 @@ Font text styles, semantic descriptions of the intended use for a font returned 
 * `.caption1`
 * `.caption2`
 
-# Icons
+# Icons (SF Symbols)
 
 [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/) provides a set of over 1,500 consistent, highly configurable symbols you can use in your app. Apple designed SF Symbols to integrate seamlessly with the San Francisco system font, so the symbols automatically ensure optical vertical alignment with text for all weights and sizes.
 
