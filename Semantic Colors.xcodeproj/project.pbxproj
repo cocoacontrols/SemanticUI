@@ -12,19 +12,25 @@
 		9368F026233966C70041AF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368F025233966C70041AF64 /* AppDelegate.swift */; };
 		9368F02F233966CB0041AF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9368F02E233966CB0041AF64 /* Assets.xcassets */; };
 		9368F032233966CB0041AF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9368F030233966CB0041AF64 /* LaunchScreen.storyboard */; };
+		938C300D237743F000DFC6D8 /* ColorStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938C300C237743F000DFC6D8 /* ColorStackViewController.swift */; };
 		93A34B3C2368B63500FE397D /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A34B3B2368B63500FE397D /* ColorsViewController.swift */; };
 		93A34B3E2368B65F00FE397D /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A34B3D2368B65F00FE397D /* FontsViewController.swift */; };
+		93FCD118237880F2005F3890 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FCD117237880F2005F3890 /* Helpers.swift */; };
+		93FCD11A2378C096005F3890 /* DemosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FCD1192378C096005F3890 /* DemosController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9368BC4A23761210002A14FE /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
-		9368F022233966C70041AF64 /* Semantic Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Semantic Colors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9368F022233966C70041AF64 /* Semantic UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Semantic UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9368F025233966C70041AF64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9368F02E233966CB0041AF64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9368F031233966CB0041AF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9368F033233966CB0041AF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938C300C237743F000DFC6D8 /* ColorStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStackViewController.swift; sourceTree = "<group>"; };
 		93A34B3B2368B63500FE397D /* ColorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		93A34B3D2368B65F00FE397D /* FontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsViewController.swift; sourceTree = "<group>"; };
+		93FCD117237880F2005F3890 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		93FCD1192378C096005F3890 /* DemosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +56,7 @@
 		9368F023233966C70041AF64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9368F022233966C70041AF64 /* Semantic Colors.app */,
+				9368F022233966C70041AF64 /* Semantic UI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +64,16 @@
 		9368F024233966C70041AF64 /* Semantic Colors */ = {
 			isa = PBXGroup;
 			children = (
+				93FCD1192378C096005F3890 /* DemosController.swift */,
 				9368BC4A23761210002A14FE /* IconsViewController.swift */,
 				93A34B3D2368B65F00FE397D /* FontsViewController.swift */,
 				93A34B3B2368B63500FE397D /* ColorsViewController.swift */,
+				938C300C237743F000DFC6D8 /* ColorStackViewController.swift */,
 				9368F025233966C70041AF64 /* AppDelegate.swift */,
 				9368F02E233966CB0041AF64 /* Assets.xcassets */,
 				9368F030233966CB0041AF64 /* LaunchScreen.storyboard */,
 				9368F033233966CB0041AF64 /* Info.plist */,
+				93FCD117237880F2005F3890 /* Helpers.swift */,
 			);
 			path = "Semantic Colors";
 			sourceTree = "<group>";
@@ -89,7 +98,7 @@
 				9368BC48237611F4002A14FE /* SFSymbol */,
 			);
 			productName = "Semantic Colors";
-			productReference = 9368F022233966C70041AF64 /* Semantic Colors.app */;
+			productReference = 9368F022233966C70041AF64 /* Semantic UI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -145,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938C300D237743F000DFC6D8 /* ColorStackViewController.swift in Sources */,
+				93FCD118237880F2005F3890 /* Helpers.swift in Sources */,
 				93A34B3C2368B63500FE397D /* ColorsViewController.swift in Sources */,
 				93A34B3E2368B65F00FE397D /* FontsViewController.swift in Sources */,
+				93FCD11A2378C096005F3890 /* DemosController.swift in Sources */,
 				9368F026233966C70041AF64 /* AppDelegate.swift in Sources */,
 				9368BC4B23761210002A14FE /* IconsViewController.swift in Sources */,
 			);
@@ -290,8 +302,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoacontrols.Semantic-Colors";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoacontrols.Semantic-UI";
+				PRODUCT_NAME = "Semantic UI";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,8 +319,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoacontrols.Semantic-Colors";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoacontrols.Semantic-UI";
+				PRODUCT_NAME = "Semantic UI";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

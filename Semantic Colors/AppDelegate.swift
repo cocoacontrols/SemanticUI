@@ -19,6 +19,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+class PrimarySplitViewController: UISplitViewController,
+                                  UISplitViewControllerDelegate {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.delegate = self
+        self.preferredDisplayMode = .allVisible
+    }
+
+    func splitViewController(
+             _ splitViewController: UISplitViewController,
+             collapseSecondary secondaryViewController: UIViewController,
+             onto primaryViewController: UIViewController) -> Bool {
+        // Return true to prevent UIKit from applying its default behavior
+        return true
+    }
+}
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
@@ -26,15 +44,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = scene as? UIWindowScene else { fatalError() }
 
         let window = UIWindow(windowScene: scene)
-
-        let tabController = UITabBarController()
-        tabController.viewControllers = [
-            UINavigationController(rootViewController: ColorsViewController()),
-            UINavigationController(rootViewController: FontsViewController()),
-            UINavigationController(rootViewController: IconsViewController())
+                
+        let semanticUIDemos = [
+            ColorStackViewController(),
+            ColorsViewController(),
+            FontsViewController(),
+            IconsViewController()
         ]
+     
+        let demosController = DemosController(nibName: nil, bundle: nil)
+        demosController.demoControllers = semanticUIDemos
 
-        window.rootViewController = tabController
+        let splitController = PrimarySplitViewController()
+        splitController.viewControllers = [UINavigationController(rootViewController: demosController), UINavigationController(rootViewController: semanticUIDemos[0])]
+        
+        demosController.demoControllerSelected = { controller in
+            splitController.showDetailViewController(UINavigationController(rootViewController: controller), sender: nil)
+        }
+        
+        window.rootViewController = splitController
+
         self.window = window
         window.makeKeyAndVisible()
     }

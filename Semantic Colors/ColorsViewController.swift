@@ -206,9 +206,8 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
 
-        title = "iOS 13 Colors & Dark Mode"
-        navigationItem.title = title
-        tabBarItem.title = "Colors"
+        title = NSLocalizedString("colors_controller.title", value: "Colors", comment: "Colors controller title")
+        tabBarItem.image = UIImage(systemName: "eyedropper")
     }
 
     required init?(coder: NSCoder) {
@@ -217,9 +216,6 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationController?.tabBarItem.title = tabBarItem.title
-        navigationController?.tabBarItem.image = UIImage(systemName: "eyedropper")
 
         view.addSubview(tableView)
         tableView.frame = view.bounds
