@@ -29,6 +29,8 @@ class DemosController: UITableViewController {
         super.viewDidLoad()
                 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        
+        tableView.tableFooterView = UIView()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
