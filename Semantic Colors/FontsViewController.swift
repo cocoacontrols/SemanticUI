@@ -55,6 +55,7 @@ class FontsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let table = UITableView()
         table.dataSource = self
         table.delegate = self
+        table.allowsSelection = false
         return table
     }()
 
