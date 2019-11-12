@@ -64,6 +64,7 @@ class IconsViewController: UIViewController, UISearchBarDelegate, UISearchResult
         let table = UITableView()
         table.dataSource = dataSource
         table.delegate = dataSource
+        table.allowsSelection = false
         return table
     }()
     

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AloeStackView
 
 class ColorStackViewController: UIViewController {
     // MARK: - UIViewController
