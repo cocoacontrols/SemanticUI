@@ -36,7 +36,22 @@ class ColorStackViewController: UIViewController {
     
     // MARK: - UI Properties
     
-    private lazy var titleLabel = buildLabel(text: ".systemBackground")
+    private lazy var primaryLabel = buildLabel(text: "Title (.label)", textStyle: .headline, textColor: .label)
+    private lazy var secondaryLabel = buildLabel(text: "Subtitle (.secondaryLabel)", textStyle: .headline, textColor: .secondaryLabel)
+    private lazy var tertiaryLabel = buildLabel(text: "Placeholder (.tertiaryLabel)", textStyle: .headline, textColor: .tertiaryLabel)
+    private lazy var placeholderLabel = buildLabel(text: "Placeholder 🤷‍♂️ (.placeholderText)", textStyle: .headline, textColor: .placeholderText)
+    private lazy var quaternaryLabel = buildLabel(text: "Disabled (.quaternaryLabel)", textStyle: .headline, textColor: .quaternaryLabel)
+    
+    private lazy var separator: UIView = {
+        let view = UIView.autolayoutNew()
+        view.backgroundColor = .separator
+        NSLayoutConstraint.activate([
+            view.heightAnchor.constraint(equalToConstant: 1.0)
+        ])
+        return view
+    }()
+
+    private lazy var primaryBackgroundLabel = buildLabel(text: ".systemBackground")
     
     private lazy var secondaryContainer: UIView = {
         let view = buildContainer(backgroundColor: .secondarySystemBackground)
@@ -45,7 +60,7 @@ class ColorStackViewController: UIViewController {
         return view
     }()
     
-    private lazy var secondaryLabel = buildLabel(text: ".secondarySystemBackground")
+    private lazy var secondaryBackgroundLabel = buildLabel(text: ".secondarySystemBackground")
     
     private lazy var tertiaryContainer: UIView = {
         let view = buildContainer(backgroundColor: .tertiarySystemBackground)
@@ -55,21 +70,22 @@ class ColorStackViewController: UIViewController {
         return view
     }()
     
-    private lazy var tertiaryLabel = buildLabel(text: ".tertiarySystemBackground")
+    private lazy var tertiaryBackgroundLabel = buildLabel(text: ".tertiarySystemBackground")
     
-    private lazy var primaryStack = buildStackView(arrangedSubviews: [titleLabel, secondaryContainer])
+    private lazy var primaryStack = UIStackView.verticalStack(arrangedSubviews: [primaryLabel, secondaryLabel, tertiaryLabel, placeholderLabel, quaternaryLabel, separator, primaryBackgroundLabel, secondaryContainer])
     
-    private lazy var secondaryStack = buildStackView(arrangedSubviews: [secondaryLabel, tertiaryContainer])
+    private lazy var secondaryStack = UIStackView.verticalStack(arrangedSubviews: [secondaryBackgroundLabel, tertiaryContainer])
     
-    private lazy var tertiaryStack = buildStackView(arrangedSubviews: [tertiaryLabel, UIView.autolayoutNew()])
+    private lazy var tertiaryStack = UIStackView.verticalStack(arrangedSubviews: [tertiaryBackgroundLabel, UIView.autolayoutNew()])
 
     // MARK: - Private UI Helpers
     
-    private func buildLabel(text: String) -> UILabel {
+    private func buildLabel(text: String, textStyle: UIFont.TextStyle = .footnote, textColor: UIColor = .label) -> UILabel {
         let label = UILabel.autolayoutNew()
-        label.font = UIFont.preferredFont(forTextStyle: .footnote)
-        label.text = text
+        label.font = UIFont.preferredFont(forTextStyle: textStyle)
+        label.textColor = textColor
         label.setContentHuggingPriority(.required, for: .vertical)
+        label.text = text
         return label
     }
     
@@ -79,13 +95,5 @@ class ColorStackViewController: UIViewController {
         container.layer.cornerRadius = UIView.defaultCornerRadius
         container.directionalLayoutMargins = UIView.defaultDirectionalLayoutMargins
         return container
-    }
-    
-    private func buildStackView(arrangedSubviews: [UIView]) -> UIStackView {
-        let stack = UIStackView(arrangedSubviews: arrangedSubviews)
-        stack.axis = .vertical
-        stack.spacing = UIView.defaultPadding
-        stack.translatesAutoresizingMaskIntoConstraints = false
-        return stack
     }
 }

@@ -8,6 +8,23 @@
 
 import UIKit
 
+// MARK: - UIStackView
+
+extension UIStackView {
+    
+    /// Creates a stack view configured for displaying content vertically.
+    /// - Parameter arrangedSubviews: The views to display within the returned stack view.
+    public static func verticalStack(arrangedSubviews: [UIView]) -> UIStackView {
+        let stack = UIStackView(arrangedSubviews: arrangedSubviews)
+        stack.axis = .vertical
+        stack.spacing = UIView.defaultPadding
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }
+}
+
+// MARK: - UIView
+
 extension UIView {
     
     public static let defaultCornerRadius: CGFloat = 8.0
