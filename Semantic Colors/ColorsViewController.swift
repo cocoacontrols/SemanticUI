@@ -14,6 +14,7 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     private lazy var tableSections: [TableSection] = [
         TableSection(name: "Adaptable Colors", rows: adaptableColors),
+        TableSection(name: "Adaptable Colors for iOS 15", rows: newAdaptableColorsForIOS15),
         TableSection(name: "Adaptable Grays", rows: adaptableGrays),
         TableSection(name: "Label Colors", rows: labelColors),
         TableSection(name: "Text Colors", rows: textColors),
@@ -42,7 +43,21 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cells.append(buildCell(name: ".systemPurple", backgroundColor: .systemPurple))
         cells.append(buildCell(name: ".systemTeal", backgroundColor: .systemTeal))
         cells.append(buildCell(name: ".systemYellow", backgroundColor: .systemYellow))
-
+        
+        
+        return cells
+    }()
+    
+    /// New adaptable colors for iOS 15
+    private lazy var newAdaptableColorsForIOS15: [UITableViewCell] = {
+        var cells = [UITableViewCell]()
+        
+        if #available(iOS 15, *) {
+            cells.append(buildCell(name: ".systemMint", backgroundColor: .systemMint))
+            cells.append(buildCell(name: ".systemCyan", backgroundColor: .systemCyan))
+            cells.append(buildCell(name: ".systemBrown", backgroundColor: .systemBrown))
+        }
+        
         return cells
     }()
 
