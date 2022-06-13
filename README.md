@@ -1,6 +1,6 @@
-# iOS 13 Semantic UI: Dark Mode, Dynamic Type, and SF Symbols
+# iOS Semantic UI: Dark Mode, Dynamic Type, and SF Symbols
 
-This sample project makes it easy to visualize all of iOS 13's semantic and adaptable colors, preferred fonts for text styles, and built-in icons.
+This sample project makes it easy to visualize all of iOS's semantic and adaptable colors, preferred fonts for text styles, and built-in icons.
 
 Semantic colors automatically adapt to system settings, like Dark Mode, to give your app a UI that is always legible.
 
