@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -48,6 +49,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let semanticUIDemos = [
             ColorStackViewController(),
             ColorsViewController(),
+            SwiftUIColorsView.hostingController,
             FontsViewController(),
             FontsWeightViewController(),
             IconsViewController()

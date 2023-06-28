@@ -18,6 +18,7 @@
 		93A34B3E2368B65F00FE397D /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A34B3D2368B65F00FE397D /* FontsViewController.swift */; };
 		93FCD118237880F2005F3890 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FCD117237880F2005F3890 /* Helpers.swift */; };
 		93FCD11A2378C096005F3890 /* DemosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FCD1192378C096005F3890 /* DemosController.swift */; };
+		E930F6902A4CBC790031460F /* SwiftUIColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930F68F2A4CBC790031460F /* SwiftUIColorsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		93A34B3D2368B65F00FE397D /* FontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsViewController.swift; sourceTree = "<group>"; };
 		93FCD117237880F2005F3890 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		93FCD1192378C096005F3890 /* DemosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosController.swift; sourceTree = "<group>"; };
+		E930F68F2A4CBC790031460F /* SwiftUIColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIColorsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				9368F030233966CB0041AF64 /* LaunchScreen.storyboard */,
 				9368F033233966CB0041AF64 /* Info.plist */,
 				93FCD117237880F2005F3890 /* Helpers.swift */,
+				E930F68F2A4CBC790031460F /* SwiftUIColorsView.swift */,
 			);
 			path = "Semantic Colors";
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E930F6902A4CBC790031460F /* SwiftUIColorsView.swift in Sources */,
 				938C300D237743F000DFC6D8 /* ColorStackViewController.swift in Sources */,
 				93FCD118237880F2005F3890 /* Helpers.swift in Sources */,
 				93A34B3C2368B63500FE397D /* ColorsViewController.swift in Sources */,
