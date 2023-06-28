@@ -147,6 +147,15 @@ Font text styles, semantic descriptions of the intended use for a font returned 
 
 [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/) provides a set of thousands of consistent, highly configurable symbols you can use in your app. Apple designed SF Symbols to integrate seamlessly with the San Francisco system font, so the symbols automatically ensure optical vertical alignment with text for all weights and sizes.
 
+# Contributors
+
+* [Aaron Brethorst](https://github.com/aaronbrethorst)
+* [Nicolas Garcia](https://github.com/nicoonguitar)
+* [Dan Turner](https://github.com/djtech42)
+* [Duncan Horne](https://github.com/Zem0)
+* [Renz](https://github.com/rhenz)
+* [JinSeok Yang](https://github.com/DanielY1108)
+
 # Third Party Libraries
 
 ## SFSymbols Library
