@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "SFSymbol",
-        "repositoryURL": "https://github.com/Nirma/SFSymbol",
-        "state": {
-          "branch": null,
-          "revision": "5eba1ce4fc19b2f5aca2208b5927c544e0e89963",
-          "version": "0.2.0"
-        }
+  "pins" : [
+    {
+      "identity" : "sfsymbol",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Nirma/SFSymbol",
+      "state" : {
+        "revision" : "5eba1ce4fc19b2f5aca2208b5927c544e0e89963",
+        "version" : "0.2.0"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }

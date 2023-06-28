@@ -16,7 +16,7 @@ class DemosController: UITableViewController {
     var demoControllerSelected: ((UIViewController) -> Void)?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nil, bundle: nil)
+        super.init(style: .insetGrouped)
                 
         title = NSLocalizedString("demos_controller.title", value: "Semantic UI Demos", comment: "Demos controller title")
     }
@@ -27,7 +27,7 @@ class DemosController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         
         tableView.tableFooterView = UIView()
