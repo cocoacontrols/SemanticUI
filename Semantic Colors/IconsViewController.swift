@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SFSymbol
+import SFSymbols
 
 class IconsViewController: UIViewController, UISearchBarDelegate, UISearchResultsUpdating {
 
@@ -25,7 +25,7 @@ class IconsViewController: UIViewController, UISearchBarDelegate, UISearchResult
         super.init(nibName: nil, bundle: nil)
 
         title = "Icons"
-        tabBarItem.image = UIImage(systemName: SFSymbol.eyeglasses.rawValue)
+        tabBarItem.image = UIImage(systemName: SFSymbol.eyeglasses.id)
     }
 
     required init?(coder: NSCoder) {
@@ -143,7 +143,7 @@ fileprivate class IconDataSource: NSObject, UITableViewDataSource, UITableViewDe
         
         super.init()
 
-        let icons = SFSymbol.allCases.map { $0.rawValue }
+        let icons = SFSymbol.allSymbols.map { $0.id }
         let selector = #selector(getter: description)
         
         let sortedObjects = collation.sortedArray(from: icons, collationStringSelector: selector) as! [String]
@@ -194,8 +194,8 @@ fileprivate class IconSearchDataSource: NSObject, UITableViewDataSource, UITable
     init(cellIdentifier: String) {
         self.cellIdentifier = cellIdentifier
     }
-    
-    private lazy var allIcons = SFSymbol.allCases.map { $0.rawValue }.sorted()
+
+    private lazy var allIcons = SFSymbol.allSymbols.map { $0.id }.sorted()
     
     var filteredIcons = [String]()
 

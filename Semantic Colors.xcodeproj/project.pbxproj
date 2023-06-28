@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		65634A442A4CA3DC005DDAD4 /* FontWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65634A432A4CA3DC005DDAD4 /* FontWeightViewController.swift */; };
-		9368BC49237611F4002A14FE /* SFSymbol in Frameworks */ = {isa = PBXBuildFile; productRef = 9368BC48237611F4002A14FE /* SFSymbol */; };
 		9368BC4B23761210002A14FE /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368BC4A23761210002A14FE /* IconsViewController.swift */; };
 		9368F026233966C70041AF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368F025233966C70041AF64 /* AppDelegate.swift */; };
 		9368F02F233966CB0041AF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9368F02E233966CB0041AF64 /* Assets.xcassets */; };
@@ -19,6 +18,7 @@
 		93FCD118237880F2005F3890 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FCD117237880F2005F3890 /* Helpers.swift */; };
 		93FCD11A2378C096005F3890 /* DemosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FCD1192378C096005F3890 /* DemosController.swift */; };
 		E930F6902A4CBC790031460F /* SwiftUIColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930F68F2A4CBC790031460F /* SwiftUIColorsView.swift */; };
+		E930F6932A4CD36E0031460F /* SFSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = E930F6922A4CD36E0031460F /* SFSymbols */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9368BC49237611F4002A14FE /* SFSymbol in Frameworks */,
+				E930F6932A4CD36E0031460F /* SFSymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 			);
 			name = "Semantic Colors";
 			packageProductDependencies = (
-				9368BC48237611F4002A14FE /* SFSymbol */,
+				E930F6922A4CD36E0031460F /* SFSymbols */,
 			);
 			productName = "Semantic Colors";
 			productReference = 9368F022233966C70041AF64 /* Semantic UI.app */;
@@ -133,7 +133,7 @@
 			);
 			mainGroup = 9368F019233966C70041AF64;
 			packageReferences = (
-				9368BC47237611F4002A14FE /* XCRemoteSwiftPackageReference "SFSymbol" */,
+				E930F6912A4CD36E0031460F /* XCRemoteSwiftPackageReference "SFSymbols" */,
 			);
 			productRefGroup = 9368F023233966C70041AF64 /* Products */;
 			projectDirPath = "";
@@ -363,21 +363,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9368BC47237611F4002A14FE /* XCRemoteSwiftPackageReference "SFSymbol" */ = {
+		E930F6912A4CD36E0031460F /* XCRemoteSwiftPackageReference "SFSymbols" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Nirma/SFSymbol";
+			repositoryURL = "https://github.com/Rspoon3/SFSymbols";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9368BC48237611F4002A14FE /* SFSymbol */ = {
+		E930F6922A4CD36E0031460F /* SFSymbols */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9368BC47237611F4002A14FE /* XCRemoteSwiftPackageReference "SFSymbol" */;
-			productName = SFSymbol;
+			package = E930F6912A4CD36E0031460F /* XCRemoteSwiftPackageReference "SFSymbols" */;
+			productName = SFSymbols;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
