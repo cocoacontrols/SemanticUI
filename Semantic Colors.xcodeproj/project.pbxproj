@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65634A442A4CA3DC005DDAD4 /* FontWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65634A432A4CA3DC005DDAD4 /* FontWeightViewController.swift */; };
 		9368BC49237611F4002A14FE /* SFSymbol in Frameworks */ = {isa = PBXBuildFile; productRef = 9368BC48237611F4002A14FE /* SFSymbol */; };
 		9368BC4B23761210002A14FE /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368BC4A23761210002A14FE /* IconsViewController.swift */; };
 		9368F026233966C70041AF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368F025233966C70041AF64 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65634A432A4CA3DC005DDAD4 /* FontWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeightViewController.swift; sourceTree = "<group>"; };
 		9368BC4A23761210002A14FE /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
 		9368F022233966C70041AF64 /* Semantic UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Semantic UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9368F025233966C70041AF64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				93FCD1192378C096005F3890 /* DemosController.swift */,
 				9368BC4A23761210002A14FE /* IconsViewController.swift */,
 				93A34B3D2368B65F00FE397D /* FontsViewController.swift */,
+				65634A432A4CA3DC005DDAD4 /* FontWeightViewController.swift */,
 				93A34B3B2368B63500FE397D /* ColorsViewController.swift */,
 				938C300C237743F000DFC6D8 /* ColorStackViewController.swift */,
 				9368F025233966C70041AF64 /* AppDelegate.swift */,
@@ -161,6 +164,7 @@
 				93FCD11A2378C096005F3890 /* DemosController.swift in Sources */,
 				9368F026233966C70041AF64 /* AppDelegate.swift in Sources */,
 				9368BC4B23761210002A14FE /* IconsViewController.swift in Sources */,
+				65634A442A4CA3DC005DDAD4 /* FontWeightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,6 +49,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             ColorStackViewController(),
             ColorsViewController(),
             FontsViewController(),
+            FontsWeightViewController(),
             IconsViewController()
         ]
      
