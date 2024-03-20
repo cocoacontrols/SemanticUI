@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B8E794D2BA971B10015306E /* FontsDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E794C2BA971B10015306E /* FontsDesignViewController.swift */; };
 		65634A442A4CA3DC005DDAD4 /* FontWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65634A432A4CA3DC005DDAD4 /* FontWeightViewController.swift */; };
 		9368BC4B23761210002A14FE /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368BC4A23761210002A14FE /* IconsViewController.swift */; };
 		9368F026233966C70041AF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368F025233966C70041AF64 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B8E794C2BA971B10015306E /* FontsDesignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsDesignViewController.swift; sourceTree = "<group>"; };
 		65634A432A4CA3DC005DDAD4 /* FontWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeightViewController.swift; sourceTree = "<group>"; };
 		9368BC4A23761210002A14FE /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
 		9368F022233966C70041AF64 /* Semantic UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Semantic UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 				9368BC4A23761210002A14FE /* IconsViewController.swift */,
 				93A34B3D2368B65F00FE397D /* FontsViewController.swift */,
 				65634A432A4CA3DC005DDAD4 /* FontWeightViewController.swift */,
+				5B8E794C2BA971B10015306E /* FontsDesignViewController.swift */,
 				93A34B3B2368B63500FE397D /* ColorsViewController.swift */,
 				938C300C237743F000DFC6D8 /* ColorStackViewController.swift */,
 				9368F025233966C70041AF64 /* AppDelegate.swift */,
@@ -168,6 +171,7 @@
 				93A34B3E2368B65F00FE397D /* FontsViewController.swift in Sources */,
 				93FCD11A2378C096005F3890 /* DemosController.swift in Sources */,
 				9368F026233966C70041AF64 /* AppDelegate.swift in Sources */,
+				5B8E794D2BA971B10015306E /* FontsDesignViewController.swift in Sources */,
 				9368BC4B23761210002A14FE /* IconsViewController.swift in Sources */,
 				65634A442A4CA3DC005DDAD4 /* FontWeightViewController.swift in Sources */,
 			);

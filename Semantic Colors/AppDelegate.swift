@@ -52,6 +52,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             SwiftUIColorsView.hostingController,
             FontsViewController(),
             FontsWeightViewController(),
+            FontsDesignViewController(),
             IconsViewController()
         ]
      
