@@ -69,12 +69,6 @@ extension FontsDesignViewController {
             return
         }
         fontSize += 1
-        for cell in rows {
-            cell.textLabel?.font = UIFont.systemFont(ofSize: fontSize)
-
-            let roundedFont = cell.textLabel?.font ?? UIFont.systemFont(ofSize: fontSize)
-            cell.detailTextLabel?.text = "Point Size: \(roundedFont.pointSize)"
-        }
         updateFontSizes()
         tableView.reloadData()
     }
@@ -91,10 +85,9 @@ extension FontsDesignViewController {
     
     private func updateFontSizes() {
         for cell in rows {
-            cell.textLabel?.font = UIFont.systemFont(ofSize: fontSize)
+            cell.textLabel?.font = cell.textLabel?.font.withSize(fontSize)
 
-            let roundedFont = cell.textLabel?.font ?? UIFont.systemFont(ofSize: fontSize)
-            cell.detailTextLabel?.text = "Point Size: \(roundedFont.pointSize)"
+            cell.detailTextLabel?.text = "Point Size: \(fontSize)"
         }
 
         tableView.reloadData()
