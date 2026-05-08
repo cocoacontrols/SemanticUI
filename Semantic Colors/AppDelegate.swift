@@ -53,7 +53,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             FontsViewController(),
             FontsWeightViewController(),
             FontsDesignViewController(),
-            IconsViewController()
+            IconsViewController(),
+            BlurEffectsController()
         ]
      
         let demosController = DemosController(nibName: nil, bundle: nil)

@@ -61,3 +61,11 @@ extension UIView {
         ])
     }
 }
+
+
+// MARK: - TableSection
+
+struct TableSection {
+    let name: String
+    let rows: [UITableViewCell]
+}
