@@ -266,11 +266,6 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
 // MARK: - Helpers
 
-fileprivate struct TableSection {
-    let name: String
-    let rows: [UITableViewCell]
-}
-
 fileprivate func buildCell(name: String, backgroundColor: UIColor? = nil, textColor: UIColor? = nil) -> UITableViewCell {
     let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
 
