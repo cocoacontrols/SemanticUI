@@ -62,10 +62,8 @@ struct SwiftUIColorsView: View {
     }
 }
 
-struct SwiftUIColorsView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationStack {
-            SwiftUIColorsView()
-        }
+#Preview {
+    NavigationStack {
+        SwiftUIColorsView()
     }
 }
