@@ -39,24 +39,20 @@ struct SwiftUIColorsView: View {
     ]
 
     func textColor(for color: Color) -> Color {
-        if color == .white || color == .clear {
-            return .black
-        }
-        else {
-            return .white
+        switch color {
+        case .white, .clear: return .black
+        default: return .white
         }
     }
-
+    
     var body: some View {
         List {
             ForEach(colors, id: \.1) { name, c in
-                ZStack {
-                    Rectangle().fill(c)
-                    Text(name)
-                        .foregroundColor(textColor(for: c))
-                }
-                .listRowSeparator(.hidden)
+                Text(name)
+                    .foregroundColor(textColor(for: c))
+                    .listRowBackground(c)
             }
+            .listRowSeparator(.hidden)
         }
         .listStyle(.plain)
     }
