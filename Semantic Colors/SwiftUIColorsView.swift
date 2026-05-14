@@ -46,13 +46,11 @@ struct SwiftUIColorsView: View {
     }
     
     var body: some View {
-        List {
-            ForEach(colors, id: \.1) { name, c in
-                Text(name)
-                    .foregroundColor(textColor(for: c))
-                    .listRowBackground(c)
-            }
-            .listRowSeparator(.hidden)
+        List(colors, id: \.1) { name, c in
+            Text(name)
+                .foregroundColor(textColor(for: c))
+                .listRowBackground(c)
+                .listRowSeparator(.hidden)
         }
         .listStyle(.plain)
     }
