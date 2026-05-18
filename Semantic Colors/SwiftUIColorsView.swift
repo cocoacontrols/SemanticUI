@@ -39,33 +39,25 @@ struct SwiftUIColorsView: View {
     ]
 
     func textColor(for color: Color) -> Color {
-        if color == .white || color == .clear {
-            return .black
-        }
-        else {
-            return .white
+        switch color {
+        case .white, .clear: return .black
+        default: return .white
         }
     }
-
+    
     var body: some View {
-        List {
-            ForEach(colors, id: \.1) { name, c in
-                ZStack {
-                    Rectangle().fill(c)
-                    Text(name)
-                        .foregroundColor(textColor(for: c))
-                }
+        List(colors, id: \.1) { name, c in
+            Text(name)
+                .foregroundColor(textColor(for: c))
+                .listRowBackground(c)
                 .listRowSeparator(.hidden)
-            }
         }
         .listStyle(.plain)
     }
 }
 
-struct SwiftUIColorsView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationStack {
-            SwiftUIColorsView()
-        }
+#Preview {
+    NavigationStack {
+        SwiftUIColorsView()
     }
 }
